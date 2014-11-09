@@ -1,0 +1,10 @@
+{
+    "name": "ascii-heart",
+    "version": "1.0.0",
+    "dependencies": {},
+    "keywords": [
+        "web components",
+        "custom elements",
+        "ascii heart"
+    ]
+}
