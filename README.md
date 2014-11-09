@@ -1,3 +1,3 @@
 ascii-heart
 ===========
-a tiny heart for the web
+A tiny little heart for the web
