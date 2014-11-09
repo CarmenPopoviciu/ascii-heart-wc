@@ -1,0 +1,42 @@
+ascii-heart::shadow #ascii-heart
+{
+    height: 25px;
+    width: 25px;
+    font: bold 22px monospace;
+    letter-spacing: -1.5px;
+
+    animation:animated_div 5s;
+    transform-origin: 50% 50%;
+    -webkit-animation:animated_div 5s forwards;
+    -moz-animation:animated_div 5s forwards;
+    -o-animation:animated_div 5s forwards;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes animated_div
+{
+    0%	 {transform: rotate(0deg);}
+    45%  {transform: rotate(-90deg);}
+    100% {transform: rotate(-90deg);}
+}
+
+@-webkit-keyframes animated_div
+{
+    0%	 {-webkit-transform: rotate(0deg);}
+    45%	 {-webkit-transform: rotate(-90deg);}
+    100% {-webkit-transform: rotate(-90deg);}
+}
+
+@-moz-keyframes animated_div
+{
+    0%   {-moz-transform: rotate(0deg);}
+    45%  {-moz-transform: rotate(-90deg);}
+    100% {-moz-transform: rotate(-90deg);}
+}
+
+@-o-keyframes animated_div
+{
+    0%   {transform: rotate(0deg);}
+    45%  {transform: rotate(-90deg);}
+    100% {transform: rotate(-90deg);}
+}

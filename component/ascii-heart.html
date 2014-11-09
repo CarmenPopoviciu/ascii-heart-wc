@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="ascii-heart.css">
+
+<template id="heart-template">
+    <div id="ascii-heart"><3</div>
+</template>
+
+<script>
+    // thisDoc refers to the "importee", which is ascii-heart.html
+    var thisDoc = document.currentScript.ownerDocument;
+
+    // thatDoc refers to the "importer", which is index.html
+    var mainDoc = document;
+
+    var proto = Object.create(HTMLElement.prototype);
+    proto.createdCallback = function() {
+        var shadowRoot = this.createShadowRoot();
+
+        var template = thisDoc.querySelector('#heart-template');
+        var clone = thisDoc.importNode(template.content, true);
+
+        shadowRoot.appendChild(clone);
+    };
+
+    mainDoc.registerElement('ascii-heart', {
+        prototype: proto
+    });
+</script>
+
