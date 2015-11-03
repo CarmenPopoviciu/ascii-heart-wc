@@ -1,15 +1,15 @@
-ascii-heart::shadow #ascii-heart
+#ascii-heart
 {
     height: 25px;
     width: 25px;
     font: bold 22px monospace;
     letter-spacing: -1.5px;
 
-    animation:animated_div 5s;
+    animation: animated_div 5s;
     transform-origin: 50% 50%;
-    -webkit-animation:animated_div 5s forwards;
-    -moz-animation:animated_div 5s forwards;
-    -o-animation:animated_div 5s forwards;
+    -webkit-animation: animated_div 5s forwards;
+    -moz-animation: animated_div 5s forwards;
+    -o-animation: animated_div 5s forwards;
     -webkit-transform-origin: 50% 50%;
 }
 
