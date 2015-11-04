@@ -49,9 +49,10 @@
 
 <script>
     // thisDoc refers to the "importee", which is ascii-heart.html
-    var thisDoc = document.currentScript.ownerDocument;
+    // polyfill needs _currentScript instead of currentScript
+    var thisDoc = document._currentScript.ownerDocument;
 
-    // thatDoc refers to the "importer", which is index.html
+    // mainDoc refers to the "importer", which is index.html
     var mainDoc = document;
 
     var proto = Object.create(HTMLElement.prototype);
